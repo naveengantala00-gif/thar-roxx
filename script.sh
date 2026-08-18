@@ -8,9 +8,9 @@ Bash
 #!/bin/bash
 
 # Threshold values
-CPU_THRESHOLD=80
-MEM_THRESHOLD=80
-DISK_THRESHOLD=80
+CPU_THRESHOLD=60
+MEM_THRESHOLD=60
+DISK_THRESHOLD=60
 
 # Get CPU usage
 CPU_USAGE=$(top -bn1 | grep "Cpu(s)" | awk '{print 100 - $8}' | cut -d. -f1)
